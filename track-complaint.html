@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track the status of your complaint with the National Financial Ombud Scheme (NFO). Enter your case reference number to get an update.">
+  <meta name="robots" content="index, follow">
+  <title>Track Your Complaint – NFO SA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="design.css?v=2">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="nav-upper" role="navigation" aria-label="Secondary navigation">
+    <div class="container">
+      <div class="nav-upper__contact">
+        <a href="tel:+27860800900"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>0860 800 900</a>
+        <a href="mailto:info@nfosa.co.za"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@nfosa.co.za</a>
+      </div>
+      <div class="nav-upper__links">
+        <a href="media.html">Media</a>
+        <a href="participants.html" class="highlight">Participants</a>
+        <a href="financial-literacy.html">Financial Literacy</a>
+      </div>
+      <form class="nav-search" role="search" aria-label="Site search">
+        <input type="search" placeholder="Search…" aria-label="Search the site">
+        <button type="submit" aria-label="Submit search"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      </form>
+    </div>
+  </div>
+  <nav class="nav-lower" aria-label="Primary navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="NFO SA – Home">
+        <img src="https://nfosa.co.za/wp-content/uploads/2024/02/NFO-Logo.png" alt="National Financial Ombud Scheme South Africa" width="140" height="52">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-primary" id="primary-nav" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a href="about.html">About Us <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <ul class="nav-dropdown" role="list">
+            <li><a href="about.html#mission">Mission, Vision &amp; Values</a></li>
+            <li><a href="about.html#divisions">Our Divisions</a></li>
+            <li><a href="about.html#board">Our Board</a></li>
+          </ul>
+        </li>
+        <li><a href="submit-complaint.html" class="nav-cta">Submit a Complaint</a></li>
+        <li class="nav-item">
+          <a href="useful-information.html" class="active">Useful Information <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <ul class="nav-dropdown" role="list">
+            <li><a href="complaints-process.html">Complaints Process</a></li>
+            <li><a href="track-complaint.html">Track Your Complaint</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol><li><a href="index.html">Home</a></li><li><a href="useful-information.html">Useful Information</a></li><li>Track Your Complaint</li></ol>
+    </div>
+  </nav>
+
+  <section class="page-hero" aria-labelledby="page-heading">
+    <div class="container">
+      <div class="page-hero__eyebrow">Complaint Status</div>
+      <h1 id="page-heading">Track Your Complaint</h1>
+      <p>Enter your case reference number to check the current status of your complaint with the NFO.</p>
+    </div>
+  </section>
+
+  <!-- Tracker -->
+  <section class="section" aria-labelledby="tracker-heading">
+    <div class="container">
+      <div style="max-width:620px; margin:0 auto;">
+        <h2 id="tracker-heading" style="margin-bottom:1.5rem;">Enter your case reference</h2>
+
+        <form action="/track" method="get" aria-label="Complaint tracking form" style="margin-bottom:2.5rem;">
+          <div class="form-group">
+            <label class="form-label" for="case-ref">Case Reference Number <span class="req">*</span></label>
+            <div style="display:flex; gap:.75rem;">
+              <input class="form-control" type="text" id="case-ref" name="ref" required placeholder="e.g. NFO-2025-123456" autocomplete="off" style="flex:1;">
+              <button type="submit" class="btn btn--blue">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                Track
+              </button>
+            </div>
+            <span class="form-hint">Your case reference number was provided in the acknowledgement email or letter when you submitted your complaint.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="track-email">Email address used to submit <span class="req">*</span></label>
+            <input class="form-control" type="email" id="track-email" name="email" required placeholder="your@email.co.za" autocomplete="email">
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%; justify-content:center;">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Check Status
+          </button>
+        </form>
+
+        <div class="notice notice--info">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <p><strong>Can't find your reference number?</strong></p>
+            <p>Check your email inbox for an acknowledgement from the NFO, or <a href="contact.html">contact us</a> with your name, ID number and the date you submitted — we'll help locate your case.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Status stages explained -->
+  <section class="section section--alt" aria-labelledby="stages-heading">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <div class="eyebrow">Understanding your status</div>
+        <h2 id="stages-heading">What each status means</h2>
+        <p class="lead">Your complaint will move through the following stages during the resolution process.</p>
+      </div>
+      <div style="max-width:700px; margin:0 auto; display:flex; flex-direction:column; gap:1rem;">
+
+        <div style="display:flex; gap:1.5rem; align-items:flex-start; background:var(--white); border-radius:var(--r-lg); padding:1.5rem; box-shadow:var(--sh-sm);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--blue-light); color:var(--blue); display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">1</div>
+          <div>
+            <h4 style="color:var(--blue); margin-bottom:.3rem;">Received</h4>
+            <p style="font-size:.92rem; margin:0;">Your complaint has been received and logged. You will receive an acknowledgement with your case reference number within 5 business days.</p>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1.5rem; align-items:flex-start; background:var(--white); border-radius:var(--r-lg); padding:1.5rem; box-shadow:var(--sh-sm);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--gold-light); color:var(--gold-dark); display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">2</div>
+          <div>
+            <h4 style="color:var(--gold-dark); margin-bottom:.3rem;">Under Assessment</h4>
+            <p style="font-size:.92rem; margin:0;">We are reviewing your complaint to determine whether it falls within the NFO's jurisdiction and whether all required information has been provided.</p>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1.5rem; align-items:flex-start; background:var(--white); border-radius:var(--r-lg); padding:1.5rem; box-shadow:var(--sh-sm);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--teal-light); color:var(--teal); display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">3</div>
+          <div>
+            <h4 style="color:var(--teal); margin-bottom:.3rem;">Under Investigation</h4>
+            <p style="font-size:.92rem; margin:0;">Your complaint is being actively investigated. We have requested information from the financial provider and are assessing the merits of both parties' positions.</p>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1.5rem; align-items:flex-start; background:var(--white); border-radius:var(--r-lg); padding:1.5rem; box-shadow:var(--sh-sm);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--blue-light); color:var(--blue); display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">4</div>
+          <div>
+            <h4 style="color:var(--blue); margin-bottom:.3rem;">Recommendation Issued</h4>
+            <p style="font-size:.92rem; margin:0;">The NFO has issued a recommendation. Both parties have been given the opportunity to respond and indicate whether they accept the recommendation.</p>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1.5rem; align-items:flex-start; background:var(--white); border-radius:var(--r-lg); padding:1.5rem; box-shadow:var(--sh-sm);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--gold-light); color:var(--gold-dark); display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">5</div>
+          <div>
+            <h4 style="color:var(--gold-dark); margin-bottom:.3rem;">Determination Issued</h4>
+            <p style="font-size:.92rem; margin:0;">A formal determination has been issued. The determination is binding on the participant and they must comply within the specified timeframe.</p>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1.5rem; align-items:flex-start; background:var(--teal-light); border-radius:var(--r-lg); padding:1.5rem; border:1px solid var(--teal);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--teal); color:var(--white); display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0;">✓</div>
+          <div>
+            <h4 style="color:var(--teal); margin-bottom:.3rem;">Resolved / Closed</h4>
+            <p style="font-size:.92rem; margin:0;">Your complaint has been resolved and closed. If resolved in your favour, ensure the participant has complied. If you have concerns about compliance, <a href="contact.html">contact us</a>.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-strip" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading">Need to submit a new complaint?</h2>
+      <p>Our dispute resolution service is free, independent and available to all South African financial services consumers.</p>
+      <div class="cta-strip__actions">
+        <a href="submit-complaint.html" class="btn btn--primary btn--lg">Submit a Complaint</a>
+        <a href="complaints-process.html" class="btn btn--outline btn--lg">How it Works</a>
+        <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><div class="footer-logo"><img src="https://nfosa.co.za/wp-content/uploads/2024/02/NFO-Logo.png" alt="National Financial Ombud Scheme South Africa" width="120" height="44"></div><p>Free, fair and independent dispute resolution for financial services consumers in South Africa.</p><div style="margin-top:1.25rem;"><a href="tel:+27860800900" style="color:rgba(255,255,255,.8); display:block; margin-bottom:.4rem; font-size:.88rem;">📞 0860 800 900</a><a href="mailto:info@nfosa.co.za" style="color:rgba(255,255,255,.8); font-size:.88rem;">✉️ info@nfosa.co.za</a></div></div>
+      <div class="footer-col"><h5>Complaints</h5><ul><li><a href="submit-complaint.html">Submit a Complaint</a></li><li><a href="track-complaint.html">Track Your Complaint</a></li><li><a href="complaints-process.html">Complaints Process</a></li><li><a href="faqs.html">FAQs</a></li></ul></div>
+      <div class="footer-col"><h5>Information</h5><ul><li><a href="about.html">About the NFO</a></li><li><a href="participants.html">Participants</a></li><li><a href="financial-literacy.html">Financial Literacy</a></li><li><a href="media.html">Media</a></li></ul></div>
+      <div class="footer-col"><h5>Organisation</h5><ul><li><a href="about.html#board">Our Board</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="contact.html#careers">Careers</a></li><li><a href="contact.html#service-complaints">Service Complaints</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 National Financial Ombud Scheme South Africa. All rights reserved.</p><div style="display:flex; gap:1.5rem;"><a href="/privacy-policy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="/accessibility">Accessibility</a></div></div>
+  </div>
+</footer>
+<div class="mobile-cta-bar" role="complementary"><a href="submit-complaint.html" class="btn btn--primary">Submit Complaint</a><a href="track-complaint.html" class="btn btn--outline">Track Complaint</a></div>
+<script src="main.js?v=3" defer></script>
+</body>
+</html>
