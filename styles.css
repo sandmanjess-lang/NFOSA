@@ -490,6 +490,70 @@ select.form-control { appearance: none; cursor: pointer; }
 .footer-social svg { width: 16px; height: 16px; color: var(--white); }
 
 /* ─────────────────────────────────────────
+   WHATSAPP FLOATING BUTTON
+───────────────────────────────────────── */
+.wa-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  text-decoration: none;
+}
+.wa-float__btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,.45);
+  transition: transform .2s ease, box-shadow .2s ease;
+  flex-shrink: 0;
+}
+.wa-float__btn svg { width: 30px; height: 30px; }
+.wa-float:hover .wa-float__btn {
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(37,211,102,.6);
+}
+.wa-float__label {
+  background: var(--text-dark);
+  color: var(--white);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .45rem .9rem;
+  border-radius: var(--r-xl);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity .2s ease, transform .2s ease;
+  pointer-events: none;
+}
+.wa-float:hover .wa-float__label,
+.wa-float:focus .wa-float__label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Pulse ring */
+.wa-float__btn::after {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  animation: wa-pulse 2.4s ease-out infinite;
+}
+@keyframes wa-pulse {
+  0%   { transform: scale(1);   opacity: .6; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+
+/* ─────────────────────────────────────────
    SKIP LINK
 ───────────────────────────────────────── */
 .skip-link {
