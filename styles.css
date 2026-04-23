@@ -11,13 +11,13 @@
   --blue-light:    #EEF5FB;
   --blue-xlight:   #F5F9FD;
 
-  --gold:          #E8A020;
-  --gold-dark:     #C0810A;
-  --gold-light:    #FEF6E7;
+  --gold:          #2B7FD9;
+  --gold-dark:     #1A5EA8;
+  --gold-light:    #E8F2FB;
 
-  --teal:          #1B6E60;
-  --teal-mid:      #2D8A76;
-  --teal-light:    #E5F4F0;
+  --teal:          #5C7D95;
+  --teal-mid:      #7A9DB8;
+  --teal-light:    #EEF2F6;
 
   --text:          #6B6B6B;
   --text-dark:     #2A2A2A;
@@ -284,9 +284,9 @@ strong { font-weight: 700; color: var(--text-dark); }
   text-decoration: none; border: 1px solid transparent;
 }
 .qa-card:hover { transform: translateY(-4px); box-shadow: var(--sh-md); text-decoration: none; }
-.qa-card--gold { background: var(--gold-light); border-color: #F5D08A; }
+.qa-card--gold { background: var(--gold-light); border-color: #A8C8EC; }
 .qa-card--blue { background: var(--blue-light); border-color: #B3CFEA; }
-.qa-card--teal { background: var(--teal-light); border-color: #A0CEC5; }
+.qa-card--teal { background: var(--teal-light); border-color: #C0D4E4; }
 .qa-card__icon {
   width: 52px; height: 52px; border-radius: var(--r-md); display: flex; align-items: center; justify-content: center;
 }
