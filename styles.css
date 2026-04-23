@@ -249,7 +249,11 @@ strong { font-weight: 700; color: var(--text-dark); }
   margin-bottom: 1.5rem;
 }
 .hero h1 { color: var(--white); margin-bottom: 1.5rem; }
-.hero h1 span { color: var(--gold); }
+.hero h1 span {
+  color: var(--white);
+  border-bottom: 3px solid var(--teal-mid);
+  padding-bottom: .05em;
+}
 .hero__sub { font-size: 1.1rem; color: rgba(255,255,255,.9); margin-bottom: 2.5rem; max-width: 500px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem; }
 .hero__stats { display: flex; gap: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.15); }
