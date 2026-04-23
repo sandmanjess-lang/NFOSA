@@ -1,32 +1,33 @@
 /* =====================================================
    NFO SA – National Financial Ombud Scheme
-   Stylesheet · Raleway · #004990 brand
+   Stylesheet · Montserrat · NFO Brand Palette
    ===================================================== */
 
 /* ── Custom Properties ── */
 :root {
-  --blue:          #004990;
-  --blue-dark:     #003570;
-  --blue-mid:      #1A6496;
+  /* NFO Official Brand Colours (per Brand Guidelines 2023) */
+  --blue:          #004990;   /* NFO Bright Blue  – PANTONE 280C  */
+  --blue-dark:     #204789;   /* NFO Dark Blue    – PANTONE 282C  */
+  --blue-mid:      #3A6FAA;   /* mid-range blue for gradients     */
   --blue-light:    #EEF5FB;
   --blue-xlight:   #F5F9FD;
 
-  --gold:          #2B7FD9;
-  --gold-dark:     #1A5EA8;
+  --gold:          #004990;   /* primary CTA accent = Bright Blue */
+  --gold-dark:     #204789;   /* CTA hover       = Dark Blue      */
   --gold-light:    #E8F2FB;
 
-  --teal:          #5C7D95;
-  --teal-mid:      #7A9DB8;
+  --teal:          #80a1b6;   /* NFO Blue Grey    – PANTONE 7695C */
+  --teal-mid:      #a7b6bf;   /* NFO Cloud Grey   – PANTONE 5435C */
   --teal-light:    #EEF2F6;
 
-  --text:          #6B6B6B;
-  --text-dark:     #2A2A2A;
-  --text-mid:      #444444;
+  --text:          #73848d;   /* NFO Dark Grey                    */
+  --text-dark:     #414042;   /* NFO Black                        */
+  --text-mid:      #414042;   /* NFO Black                        */
   --white:         #FFFFFF;
   --bg:            #F7FAFB;
   --border:        #DDE7F0;
 
-  --font:          'Raleway', sans-serif;
+  --font:          'Montserrat', sans-serif;
 
   --r-sm:  6px;
   --r-md:  10px;
