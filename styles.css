@@ -75,6 +75,9 @@ strong { font-weight: 700; color: var(--text-dark); }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
 .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+@media (max-width: 900px) { .grid-5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .grid-5 { grid-template-columns: repeat(2, 1fr); } }
 
 .flex { display: flex; }
 .flex-center { display: flex; align-items: center; justify-content: center; }
